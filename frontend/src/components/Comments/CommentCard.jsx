@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { getDay, getFullDayWithTime } from "../../common/Date";
+import { getFullDay } from "../../common/Date";
 import { useDispatch, useSelector } from "react-redux";
 import toast, { Toaster } from "react-hot-toast";
 import CommentField from "./CommentField";
@@ -180,8 +180,8 @@ const CommentCard = ({ index, leftVal, commentData }) => {
           )}
 
           <p className="line-clamp-">{fullname} @{commented_by_username}</p>
-          <p className="min-w-fit text-dark-grey">
-            {getFullDayWithTime(commentedAt)}
+          <p className="max-w-fit text-dark-grey">
+            {getFullDay(commentedAt)}
           </p>
         </div>
 
