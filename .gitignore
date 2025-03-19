@@ -1,0 +1,5 @@
+node_modules/
+.env*
+.env
+backend/firebase-key.json
+blog-react-f7b47-firebase-adminsdk-fbsvc-98ba55d946.json
