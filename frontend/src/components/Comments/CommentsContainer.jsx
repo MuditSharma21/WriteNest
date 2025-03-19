@@ -92,9 +92,11 @@ const CommentsContainer = () => {
   return (
     <div
       className={
-        "max-sm:w-full fixed " +
-        (commentWrapper ? "top-0 sm:right-0" : "top-[100%] sm:right-[-100%]") +
-        " duration-700 max-sm:right-0 sm:top-0 w-[30%] min-w-[500px] h-full z-50 bg-white shadow-2xl p-8 px-16 overflow-y-auto overflow-x-hidden"
+        "fixed duration-700 h-full z-50 bg-white shadow-2xl overflow-y-auto overflow-x-hidden " +
+        "max-sm:w-full max-sm:p-4 max-sm:px-6 " +
+        (commentWrapper ? "max-sm:top-0" : "max-sm:top-[100%]") + " " +
+        "sm:w-[30%] sm:min-w-[500px] sm:p-8 sm:px-16 sm:top-0 " +
+        (commentWrapper ? "sm:right-0" : "sm:right-[-100%]")
       }
     >
       <div className="relative">
