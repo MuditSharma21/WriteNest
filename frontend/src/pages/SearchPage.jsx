@@ -11,7 +11,7 @@ import axios from "axios";
 import { filterPaginationData } from "../common/FilteredPaginationData";
 import UserCard from "../components/Users/UserCard";
 
-const SearchPage = () => {
+const SearchPage = () => {  
   const { query } = useParams();
   const [blogs, setBlogs] = useState(null);
   const [users, setUsers] = useState(null);
@@ -97,7 +97,7 @@ const SearchPage = () => {
                 return (
                   <AnimationWrapper
                     key={i}
-                    transition={{ duration: 1, delay: i * 0.1 }}
+                    transition={{ duration: 1, delay: i * 0.1 }} 
                   >
                     <BlogPostCard
                       content={blog}

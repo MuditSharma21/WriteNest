@@ -15,7 +15,7 @@ export const searchUser = (req, res) => {
     .catch((err) => {
       return res.status(500).json({ error: err.message });
     });
-};
+}; 
 
 export const getProfileOfUser = (req, res) => {
   const { username } = req.body;
@@ -34,7 +34,7 @@ export const getProfileOfUser = (req, res) => {
 export const writtenBlogsOfUser = (req, res) => {
   const user_id = req.user;
 
-  const { page, draft, query, deletedDocCount } = req.body;
+  const { page, draft, query, deletedDocCount } = req.body; 
 
   let maxLimit = 4;
   let skipDocs = (page - 1) * maxLimit;

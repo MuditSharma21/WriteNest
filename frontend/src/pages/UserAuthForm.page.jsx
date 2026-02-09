@@ -77,7 +77,7 @@ const UserAuthForm = ({ type }) => {
     if (type === "sign-up" && fullname.length < 3) {
       return toast.error("Fullname must be at least 3 letters or more;");
     }
-
+ 
     if (!email.length) {
       return toast.error("Enter Email");
     }

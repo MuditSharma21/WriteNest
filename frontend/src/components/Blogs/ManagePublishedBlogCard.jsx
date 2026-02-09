@@ -49,7 +49,7 @@ export const ManagePublishedBlogCard = ({ blog, setStateFunc }) => {
               to={`/blog/${blog_id}`}
               className="blog-title mb-4 hover:underline"
             >
-              {title}
+              {title1 }
             </Link>
 
             <p className="line-clamp-1">
@@ -93,7 +93,7 @@ export const ManageDraftBlogPost = ({ blog, setStateFunc }) => {
   const currentState = useSelector((store) => store.blogManagement.draftedBlogs);
 
   index++;
-  
+   
   return (
     <div className="flex gap-5 lg:gap-10 pb-6 border-b mb-6 border-grey">
       <h1 className="blog-index text-center pl-4 md:pl-6 flex-none ">

@@ -91,7 +91,7 @@ const EditProfilePage = () => {
         },
         {
           headers: {
-            Authorization: `Bearer: ${access_token}`,
+            Authorization: `Bearer ${access_token}`,
           },
         }
       )
